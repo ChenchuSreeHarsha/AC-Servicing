@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC services</title>
+    <style>
+        body
+        {
+            background-color: aqua;
+        }
+        .header
+        {
+            background-color: brown;
+            color: aliceblue;
+            text-align: end;
+            width: 55%;
+            
+        }
+        .buttons
+        {
+            gap: 20px;
+            padding: 25px;
+            padding-left: 150px;
+        }
+        #submit
+        {
+            background-color: rgb(41, 207, 41);
+            border-radius: 5px;
+        }
+        #clear
+        {
+            background-color: rgb(41, 207, 41);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="calculate()">
+        <h2 class="header"><i>AC Maintainance Service</i></h2>
+        <table>
+            <tr>
+                <th><label for="name">Customer Name</label></th>
+                <td><input type="text" id="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <th><label for="number">Mobile Number</label></th>
+                <td><input type="number" id="number" placeholder="Enter your mobile number"></td>
+            </tr>
+            <tr>
+                <th><label for="address">Address</label></th>
+                <td><textarea name="" id="" cols="20" rows="10" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="type">AC Type</label></th>
+                <td><select name="select" id="type">
+                    <option value="split" id="split">Split</option>
+                    <option value="window" id="window">Window</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th rowspan="3"><label for="service type">Service Type</label></th>
+                <td><input type="checkbox" id="cleaning" value="500">
+                <label for="cleaning">Cleaning</label></td>
+                <td><input type="checkbox" id="repair" value="2500">
+                <label for="repair">Repair</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="gas_refill" value="750">
+                <label for="gas_refill">Gas Refill</label></td>
+                <td><input type="checkbox" id="relocation" value="1500">
+                <label for="relocation">Relocation</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="filter" value="250">
+                <label for="filter">Filter</label></td>
+            </tr>
+            <tr>
+                <th><label for="date">Date for Appointment</label></th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th><label for="maintainance">Yearly Maintainance</label></th>
+                <td><input type="checkbox" id="maintainance" value="1000">
+                <label for="">select if required</label></td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button id="submit">Submit</button>
+            <button id="clear" type="reset">Clear</button>
+        </div>
+        <p id="final2"></p>
+        <p id="final"></p>
+        <p id="actype"></p>
+
+    </form>
+</body>
+<script src="ac_service.js"></script>
+</html>
